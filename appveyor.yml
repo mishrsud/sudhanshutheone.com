@@ -3,8 +3,8 @@ branches:
     - master
     
 environment:
-  access_token:
-    secure: jf56pSYTaUx5sBJCVt2IDCzmPrZ2iOTYrSVvCzEt17UhGKq3RfqlO4aIZ3bRlZSX
+  NETLIFY_TOKEN:
+    secure: YlvUfYuyESNu1oO7zzqrPBZEamNz1Ss83eH82ylp1hTw6yWdlXyMCuYc1iLst2388M8kMqhBtXyTCY69h2zyyRjyB1mE0DgEMSnqVof6W1M
 
 # Temporarily needed until curl added to PATH
 # See http://help.appveyor.com/discussions/problems/6312-curl-command-not-found

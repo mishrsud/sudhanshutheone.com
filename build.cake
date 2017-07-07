@@ -52,10 +52,10 @@ Task("Mono")
 Task("Deploy")
     .Does(() =>
     {
-        string token = EnvironmentVariable("NETLIFY_DAVEAGLICK");
+        string token = EnvironmentVariable("NETLIFY_TOKEN");
         if(string.IsNullOrEmpty(token))
         {
-            throw new Exception("Could not get NETLIFY_DAVEAGLICK environment variable");
+            throw new Exception("Could not get NETLIFY_TOKEN environment variable");
         }
         
         // This uses the Netlify CLI, but it hits the 200/min API rate limit
@@ -67,7 +67,7 @@ Task("Deploy")
 
         // Upload via curl and zip instead
         Zip("./output", "output.zip", "./output/**/*");
-        StartProcess("curl", "--header \"Content-Type: application/zip\" --header \"Authorization: Bearer " + token + "\" --data-binary \"@output.zip\" --url https://api.netlify.com/api/v1/sites/daveaglick.netlify.com/deploys");
+        StartProcess("curl", "--header \"Content-Type: application/zip\" --header \"Authorization: Bearer " + token + "\" --data-binary \"@output.zip\" --url https://api.netlify.com/api/v1/sites/sudhanshutheone.netlify.com/deploys");
     });
     
 //////////////////////////////////////////////////////////////////////
