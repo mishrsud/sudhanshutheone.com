@@ -29,7 +29,7 @@ Task("Preview")
         {
             Recipe = "Blog",
             Theme = "CleanBlog",
-            UpdatePackages = true,
+            UpdatePackages = false,
             Preview = true,
             Watch = true
         });        
