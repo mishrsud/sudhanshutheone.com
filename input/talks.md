@@ -2,7 +2,7 @@ Title: Talks
 Image: images/microphone.jpg
 ---
 
-I enjoy giving talks at user groups, code camps, and conferences and have been fortunate enough to do so. Here's a list of the talks I've given and where I've given them. All the materials are available [on GitHub](https://github.com/daveaglick/Presentations).
+<!--I enjoy giving talks at user groups, code camps, and conferences and have been fortunate enough to do so. Here's a list of the talks I've given and where I've given them. All the materials are available [on GitHub](https://github.com/daveaglick/Presentations).
 
 ## I Open Source, And So Can You!
 * 9/20/2016 - .NET DC User Group
@@ -19,4 +19,4 @@ I enjoy giving talks at user groups, code camps, and conferences and have been f
 
 ## Other Talks
 * 7/11/2016: Giving Back: Your First Pull Request (Lightning Talk) - .NET Fringe
-* 10/26/2015: Wyam (Lightning Talk) - .NET Unboxed
+* 10/26/2015: Wyam (Lightning Talk) - .NET Unboxed-->

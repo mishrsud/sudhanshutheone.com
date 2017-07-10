@@ -2,7 +2,7 @@ Title: Projects
 Image: images/lightbulb.jpg
 ---
 
-## Wyam
+<!--## Wyam
 * [Website (wyam.io)](https://wyam.io)
 * [Source Code (Wyamio/Wyam)](https://github.com/Wyamio/Wyam)
 
@@ -81,7 +81,7 @@ A library that makes it easy to execute a single-threaded run loop for applicati
 ## Nxdb
 * [Source Code (daveaglick/Nxdb)](https://github.com/daveaglick/Nxdb)
 
-A high-performance embedded XML database for .NET with full XQuery support and a powerful object persistence framework. Based on an IKVM cross-compile of the Java BaseX XML database.
+A high-performance embedded XML database for .NET with full XQuery support and a powerful object persistence framework. Based on an IKVM cross-compile of the Java BaseX XML database.-->
 
 <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
