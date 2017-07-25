@@ -1,6 +1,6 @@
 Title: Targeting .NET 4.7 from Visual Studio 2017 
 Lead: Developer tools have a way of stumping you in the most unexpected of ways. This post analyses and then illustrates how to get VS 2017 list .NET 4.7 as a target framework for your projects, minus the pain. 
-Published: 25/7/2017
+Published: 7/25/2017
 Tags:
   - .NET 
   - .NET-47 
