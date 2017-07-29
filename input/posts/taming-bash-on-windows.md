@@ -1,6 +1,6 @@
 Title: Taming bash on Ubuntu on Windows 10 Creators Update!
 Lead: For the uninitiated, you can now run a real bash prompt on Windows 10 Anniversary Update or higher. Let's try to make sense of what's going on with that! 
-Published: 7/7/2017
+Published: 2017-07-07
 Tags:
   - windows10 
   - wsl
