@@ -20,6 +20,7 @@ Task("Build")
             Theme = "CleanBlog",
             UpdatePackages = true
         });        
+        CopyFile("./netlify.toml", "./output/netlify.toml");
     });
     
 Task("Preview")
