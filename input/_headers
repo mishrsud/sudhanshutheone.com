@@ -1,4 +1,3 @@
 /*
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   Access-Control-Allow-Origin = "*"
-    Content-Type = "application/font-woff"
