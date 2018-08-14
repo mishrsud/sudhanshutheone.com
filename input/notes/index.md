@@ -8,6 +8,6 @@ Image: /images/notes.jpg
 
 This is the home for my public notes. Search engines would help me remember and find it when I need them the most.
 
-[QUIC Network Protocol {12th August 2018}](quic-network-protocol)
+[QUIC Network Protocol {12th August 2018}](/notes/quic-network-protocol)
 
-[Developing a personal mission {1st August 2018}](developing-a-mission)
+[Developing a personal mission {1st August 2018}](/notes/developing-a-mission)
