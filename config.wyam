@@ -1,5 +1,5 @@
 Settings[Keys.Host] = "sudhanshutheone.com";
 Settings[Keys.LinksUseHttps] = true;
 Settings[BlogKeys.Title] = "Sudhanshu Mishra";
-Settings[BlogKeys.Description] = "The personal blog of Sudhanshu Mishra";
-Settings[BlogKeys.Intro] = "Hi! I'm a .NET and open source enthusiast and an all round nice guy.";
+Settings[BlogKeys.Description] = "Sudhanshu Mishra's personal website and blog";
+Settings[BlogKeys.Intro] = "Software Crafts-person, .NET Guy, Open source enthusiast and an all round nice guy.";

@@ -1,0 +1,1 @@
+Get-ChildItem .\input\notes\ -Exclude "index.md" | Sort-Object CreationTime -Descending | Select-Object name | ForEach-Object {"["+$_.Name+"]("+$_.Name+")"} | Out-File -Append .\input\notes\index.md
