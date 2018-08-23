@@ -153,3 +153,88 @@ func main() {
 
 ## Formatting Date and Time
 - https://golang.org/pkg/time/#pkg-constants
+
+## Array and Slice
+- Array -> Fixed length collection of items
+- Slice -> Variable length collection
+
+### Declare and iterate a Slice
+```go
+package main
+
+import "fmt"
+
+func main() {
+    days := []string {"Monday","Tuesday","Wednesday"}
+
+    for index, day := range days {
+        fmt.Println(index, day)
+    }
+}
+```
+
+### Pass by value and pointers
+- By default, when passing a type, Go passes a copy of the value 
+```go
+type person struct {
+    firstName string
+    lastName string
+}
+
+// This method does not operate on the initial value of 
+// person. It works with a copy of person
+func (p person) updateName(newName string) {
+    p.firstName = "Newname" 
+}
+```
+
+- To get access to the reference, Go uses pointers
+```go
+myPerson := person{firstName: "Clark", lasName: "Kent"}
+
+myPersonPointer := &myPerson
+valueAtPointer := *myPersonPointer
+
+// In a receiver function, the * notation implies a value of type specified
+// e.g. below function receives the value of type person
+func (p *person) updateName(newName string) {
+    (*p).firstName = "Claire"
+}
+```
+**Memory aid:**
+```text
+Turn |address| into |value| with *address
+Turn |value| into |address| with &value
+```
+
+- Concise definition of type and methods on it
+```go
+type person struct {
+    firstName string
+    lastName string
+}
+
+func (p *person) updateFirstName(newFirstName string) {
+    p.firstName = newFirstName
+}
+```
+
+### Maps 
+- maps are Key-value pairs
+```go
+// http://bit.ly/2Lw3BFG 
+myMap := map[int]string // a map whose keys are integers and values are strings
+myMap = make(map[int]string) // create an instance
+myMap[0] = "C#"
+
+//access value
+myMap[1]
+
+// check if value exists
+val,found := myMap[0]
+	if found {
+		fmt.Println("found", val)
+	} else {
+		fmt.Println("NOT found")
+	}
+```
