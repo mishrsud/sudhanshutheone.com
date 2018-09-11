@@ -1,8 +1,11 @@
 ---
+title: Learning resources and notes from my experience with [Go lang](https://golang.org)
 ---
 
 ### Resource
 https://www.safaribooksonline.com/videos/introduction-to-go/9781491913871/9781491913871-video191842
+**List of open source libraries**
+https://awesome-go.com/
 
 ### Getting Started
 

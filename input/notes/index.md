@@ -8,6 +8,8 @@ Image: /images/notes.jpg
 
 This is the home for my public notes. Search engines would help me remember and find it when I need them the most.
 
+[Generating REST API Client](/notes/generating-webapi-client)
+
 [Learning Golang {14th August 2018}](/notes/learning-go)
 
 [QUIC Network Protocol {12th August 2018}](/notes/quic-network-protocol)
