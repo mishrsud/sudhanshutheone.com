@@ -7,6 +7,32 @@ https://www.safaribooksonline.com/videos/introduction-to-go/9781491913871/978149
 **List of open source libraries**
 https://awesome-go.com/
 
+### Debugging in VS Code
+Follow instructions [here](https://github.com/derekparker/delve) to setup Delve. Add a launch config using the Debug button on the left panel:
+```json
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "remotePath": "",
+            "port": 2345,
+            "host": "127.0.0.1",
+            "program": "${fileDirname}",
+            "env": {},
+            "args": [],
+            "showLog": false
+        }
+    ]
+}
+```
+
 ### Getting Started
 
 #### Go Playground
