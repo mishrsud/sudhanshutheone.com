@@ -8,6 +8,8 @@ Image: /images/notes.jpg
 
 This is the home for my public notes. Search engines would help me remember and find it when I need them the most.
 
+[Cake build on *nix on dotnet core](/notes/cake-on-mac-dotnet-core)
+
 [Generating REST API Client](/notes/generating-webapi-client)
 
 [Learning Golang {14th August 2018}](/notes/learning-go)
