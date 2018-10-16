@@ -8,12 +8,18 @@ Image: /images/notes.jpg
 
 This is the home for my public notes. Search engines would help me remember and find it when I need them the most.
 
-[Cake build on *nix on dotnet core](/notes/cake-on-mac-dotnet-core)
+1. [Environment variables on Mac OSX](/notes/environment-variables-mac)
 
-[Generating REST API Client](/notes/generating-webapi-client)
+2. [Setting up Azure CLI on mac](/notes/setting-up-azure-cli-mac)
 
-[Learning Golang {14th August 2018}](/notes/learning-go)
+3. [Azure Service bus with dotnet core](/notes/azure-service-bus-with-dotnetcore)
 
-[QUIC Network Protocol {12th August 2018}](/notes/quic-network-protocol)
+4. [Cake build on *nix on dotnet core](/notes/cake-on-mac-dotnet-core)
 
-[Developing a personal mission {1st August 2018}](/notes/developing-a-mission)
+5. [Generating REST API Client](/notes/generating-webapi-client)
+
+6. [Learning Golang {14th August 2018}](/notes/learning-go)
+
+7. [QUIC Network Protocol {12th August 2018}](/notes/quic-network-protocol)
+
+8. [Developing a personal mission {1st August 2018}](/notes/developing-a-mission)
