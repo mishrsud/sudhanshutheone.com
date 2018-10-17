@@ -53,7 +53,8 @@ az configure
 This will store settings at **/Users/username/.azure/config**
 
 ## References
-[Microsoft Docs to setup Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos?view=azure-cli-latest)
+- [Microsoft Docs to setup Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos?view=azure-cli-latest)
+- [Stackoverflow: Installing specific versions with homebrew](https://stackoverflow.com/a/17103753/190476)
 
 Hope that helps!
 
