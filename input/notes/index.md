@@ -8,14 +8,16 @@ Image: /images/notes.jpg
 
 This is the home for my public notes. Search engines would help me remember and find it when I need them the most.
 
-1. [Azure Service bus with dotnet core](/notes/azure-service-bus-with-dotnetcore)
+- [Nuget command line and cross platform](/notes/nuget-cross-platform)
 
-2. [Cake build on *nix on dotnet core](/notes/cake-on-mac-dotnet-core)
+- [Azure Service bus with dotnet core](/notes/azure-service-bus-with-dotnetcore)
 
-3. [Generating REST API Client](/notes/generating-webapi-client)
+- [Cake build on *nix on dotnet core](/notes/cake-on-mac-dotnet-core)
 
-4. [Learning Golang {14th August 2018}](/notes/learning-go)
+- [Generating REST API Client](/notes/generating-webapi-client)
 
-5. [QUIC Network Protocol {12th August 2018}](/notes/quic-network-protocol)
+- [Learning Golang {14th August 2018}](/notes/learning-go)
 
-6. [Developing a personal mission {1st August 2018}](/notes/developing-a-mission)
+- [QUIC Network Protocol {12th August 2018}](/notes/quic-network-protocol)
+
+- [Developing a personal mission {1st August 2018}](/notes/developing-a-mission)
