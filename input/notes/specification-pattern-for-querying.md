@@ -64,3 +64,25 @@ public class ActivityTypeFilter : IFilter<Activity>
     }
 }
 ```
+
+4. Combining Specifications
+```csharp
+public interface AndSpecification<T> : ISpecification<T>
+{
+    private ISpecification<T> _first;
+    private ISpecification<T> _second;
+
+    public AndSpecification(
+        ISpecification<T> first,
+        ISpecification<T> second)
+    {
+        _first = first;
+        _second = second;
+    }
+
+    public bool IsSatisfied(T instance)
+    {
+        return _first.IsSatisified(instance) && _second.IsSatisfied(instance);
+    }
+}
+```
