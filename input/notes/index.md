@@ -8,6 +8,7 @@ Image: /images/notes.jpg
 
 This is the home for my public notes. Search engines would help me remember and find it when I need them the most.
 
+- [DateTime, DateTimeOffset and TimeZoneInfo ](/notes/beware-datetime-timezone)
 - [Nuget command line and cross platform](/notes/nuget-cross-platform)
 
 - [Azure Service bus with dotnet core](/notes/azure-service-bus-with-dotnetcore)
