@@ -96,6 +96,7 @@ dotnet msbuild -p:TargetFramework=netcoreapp2.1 -pp:fullproject.xml
 ```
 - [Microsoft.AspNetCore.App Metapackage](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/metapackage-app?view=aspnetcore-2.2)
 - [Upgrading aspnet core from 2.1 to 2.2](https://docs.microsoft.com/en-us/aspnet/core/migration/21-to-22?view=aspnetcore-2.2&tabs=visual-studio)
+- [Runtime patch selection](https://docs.microsoft.com/en-us/dotnet/core/deploying/runtime-patch-selection)
 
 HTH
 
