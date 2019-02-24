@@ -15,6 +15,8 @@ Whilst working on an ASP.NET core project, I needed to reference another package
 ```bash
 Detected package downgrade: Microsoft.AspNetCore.App from 2.1.4 to 2.1.0. Reference the package directly from the project to select a different version.
 ```
+![Screenshot-vs](images/bad-nuget-restore.png)
+
 At this time, my project file (csproj) looked like this:
 
 ```xml
@@ -33,12 +35,12 @@ At this time, my project file (csproj) looked like this:
 
 Things to note:
 1. I'm using this SDK: Microsoft.NET.Sdk.Web
-2. My app targets .NET Core 2.1 - this is indicated by the Target Framework Moniker (TFM) in the TargetFramework tag of the csproj file 
+2. My app targets .NET Core 2.1 - this is indicated by the Target Framework Moniker (TFM) in the **TargetFramework** tag of the csproj file 
 
 Now, I do not specify any version on the package "Microsoft.AspNetCore.App", so why was nuget complaining of a downgrade? What's going on here?
 
 ### More detail on the issue, please?
-As mentioned previously, I was using the default template for my csproj created when I created the project. At the time, the following runtimes were installed for AspNetCore: (you can check this by running ```dotnet --info``` in a command shell. Look for ".NET Core runtimes installed") 
+As mentioned previously, I was using the default template for my csproj created when I created the project. At the time, the following runtimes were installed for AspNetCore: (you can check this by running ```dotnet --list-runtimes``` in a command shell. Look for ".NET Core runtimes installed") 
 ```
 Microsoft.AspNetCore.All 2.1.4 
 Microsoft.AspNetCore.All 2.1.5
@@ -47,6 +49,7 @@ Microsoft.AspNetCore.All 2.1.5
 Now the package I was trying to install had a dependency on Microsoft.AspNetCore.App 2.1.4. There are several ways to find out the dependencies of a nuget package without installing it. Depending on where the package is coming from (which feed), you may be able to look at the dependencies directly on the feed. For example, nuget.org shows dependencies. Other ways include:
 1. Browsing the package feed using the excellent LinqPad tool
 2. downloading the package and looking at the package using NugetPackageExplorer
+3. Visual Studio or JetBrains Rider show package dependencies in the "Manage NuGet packages" dialogue.
 
 
 ### How Metapackage Versioning plays with the rest of the ecosystem
@@ -85,7 +88,7 @@ In my case, the resultant csproj would look like this:
 ```
 
 [This Stackoverflow answer](https://stackoverflow.com/a/46778275/190476) elaborates on the difference between TargetFramework and RuntimeFrameworkVersion:
-> The RuntimeFrameworkVersion is specific to .NET Core / netcoreapp. The SDK will inject a dependency on Microsoft.NETCore.App for the version that RuntimeFrameworkVersion is set to or use the latest version it knows about for .NET Core < 2.0. The resolved version is then written to the runtimeconfig.json file for the .NET Core host framework resolver to resolve the version of the shared framework to load (=> .NET Core 1.1.4 runtime for example).
+> The RuntimeFrameworkVersion is specific to .NET Core / netcoreapp. The SDK will inject a dependency on Microsoft.NETCore.App for the version that RuntimeFrameworkVersion is set to or use the latest version it knows about for .NET Core < 2.0. The resolved version is then written to the **runtimeconfig.json** file for the .NET Core host framework resolver to resolve the version of the shared framework to load (=> .NET Core 2.1.4 runtime for example).
 
 ### References
 - [DOCS: Implicit Package references](https://docs.microsoft.com/en-us/dotnet/core/tools/csproj)
