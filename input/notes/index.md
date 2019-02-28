@@ -8,6 +8,10 @@ Image: /images/notes.jpg
 
 This is the home for my public notes. Search engines would help me remember and find it when I need them the most.
 
+- [Thinking Architecturally](/notes/thinking-architecturally-enforcing-arch)
+
+- [Functional tests for ASP.NET Core](/notes/integration-test-aspnetcore-api)
+
 - [Using the Specification pattern](/notes/specification-pattern-for-querying)
 
 - [DateTime, DateTimeOffset and TimeZoneInfo ](/notes/beware-datetime-timezone)
