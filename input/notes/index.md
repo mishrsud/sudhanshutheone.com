@@ -18,8 +18,6 @@ This is the home for my public notes. Search engines would help me remember and 
 
 - [Docker based development environment for .NET core](/notes/docker-based-netcore-dev)
 
-- [Nuget command line and cross platform](/notes/nuget-cross-platform)
-
 - [Azure Service bus with dotnet core](/notes/azure-service-bus-with-dotnetcore)
 
 - [Cake build on *nix on dotnet core](/notes/cake-on-mac-dotnet-core)

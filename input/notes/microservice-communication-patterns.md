@@ -22,5 +22,11 @@ In a microservices based architecture, there are many decisions to be made. One 
 - one-to-one: Each client request is processed by exactly one microservice
 - one-to-many: Several microservices participate to service a client request
 
+### Key Design Considerations
+- Log ingestion from various Microservices into a centralised store
+- Correlation ids to trace operations, analytics, observability
+- Monitoring
+- Choreography rather than orchestration. Choreography implies event driven microservices
+
 ## References
 - [Microservice Patterns](https://livebook.manning.com/#!/book/microservice-patterns/chapter-3/v-11/18)
