@@ -8,6 +8,8 @@ Image: /images/notes.jpg
 
 This is the home for my public notes. Search engines would help me remember and find it when I need them the most.
 
+- [Create custom dotnet new template](/notes/create-custom-dotnet-project-template)
+
 - [Thinking Architecturally](/notes/thinking-architecturally-enforcing-arch)
 
 - [Functional tests for ASP.NET Core](/notes/integration-test-aspnetcore-api)
