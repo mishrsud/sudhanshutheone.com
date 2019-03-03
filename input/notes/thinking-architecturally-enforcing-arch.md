@@ -1,3 +1,10 @@
+---
+title: Thinking architecturally
+Tags: 
+- Architecture
+- Thoughts
+---
+
 # Architecture
 
 - What constitutes architecture?
