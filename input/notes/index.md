@@ -8,15 +8,15 @@ Image: /images/notes.jpg
 
 This is the home for my public notes. Search engines would help me remember and find it when I need them the most.
 
-- [Cake build examples](cake-build-examples)
+- [Cake build examples](/notes/cake-build-examples)
 
-- [Async await best practices](async-await-best-practices)
+- [Async await best practices](/notes/async-await-best-practices)
 
-- [Design Sliding Host](design-sliding-host)
+- [Design Sliding Host](/notes/design-sliding-host)
 
-- [Entity Framework Core lessons](ef-core-lessons)
+- [Entity Framework Core lessons](/notes/ef-core-lessons)
 
-- [SQL Server Connection Pooling](sql-server-connection-pooling)
+- [SQL Server Connection Pooling](/notes/sql-server-connection-pooling)
 
 - [Create custom dotnet new template](/notes/create-custom-dotnet-project-template)
 
