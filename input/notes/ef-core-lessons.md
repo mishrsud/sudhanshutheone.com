@@ -49,3 +49,12 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 
 
 - Many to Many
+https://github.com/aspnet/EntityFramework.Docs/tree/master/samples/core
+
+## When queries cannot be evaluated server side
+EF Core query could not be translated and will be evaluated locally
+https://stackoverflow.com/q/45237492/190476
+
+The problem: EF Core could not generate SQL according to the LINQ expression provided.
+What is the downside: More data would be brought over from database than necessary as the query expression would be evaluated in client (C#) code
+- See also, the difference between First, FirstOrDefault, Single and SingleOrDefault

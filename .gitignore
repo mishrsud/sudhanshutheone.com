@@ -8,3 +8,4 @@ nuget.exe
 /packages.xml
 .idea/
 config.*
+.vs/

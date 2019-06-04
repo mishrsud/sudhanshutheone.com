@@ -8,6 +8,10 @@ Image: /images/notes.jpg
 
 This is the home for my public notes. Search engines would help me remember and find it when I need them the most.
 
+- [Entity Framework Core Lessons](/notes/ef-core-lessons)
+
+- [C# Tricky concepts](/notes/csharp-tricky-concepts)
+
 - [Cake build examples](/notes/cake-build-examples)
 
 - [Async await best practices](/notes/async-await-best-practices)
