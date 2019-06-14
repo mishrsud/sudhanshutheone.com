@@ -8,7 +8,10 @@ Image: /images/notes.jpg
 
 This is the home for my public notes. Search engines would help me remember and find it when I need them the most.
 
+- [.NET Core Concepts](/notes/dotnetcore-concepts)
+
 - [NOSQL or RDBMS?](/notes/nosql-or-sql-decision)
+
 - [.NET core Dependency injection](/notes/dotnet-core-dependencyinjection)
 
 - [Entity Framework Core Lessons](/notes/ef-core-lessons)
