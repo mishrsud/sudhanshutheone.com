@@ -58,3 +58,15 @@ https://stackoverflow.com/q/45237492/190476
 The problem: EF Core could not generate SQL according to the LINQ expression provided.
 What is the downside: More data would be brought over from database than necessary as the query expression would be evaluated in client (C#) code
 - See also, the difference between First, FirstOrDefault, Single and SingleOrDefault
+
+## Transactions
+
+When using EF, prefer using DbContext.SaveChanges to manage transactions.
+
+Distributed transactions:
+https://docs.microsoft.com/en-us/dotnet/api/system.transactions.transactionscope?view=netframework-4.8
+NOTE: there is implicit vs explicit transactions. The default is implicit (using TransactionScope)
+[This answer](https://stackoverflow.com/a/22406116/190476) claims distributed transaction isn't supported in cloud scenarios
+distributed transactions may not scale well either (??)
+Other considerations:
+- why do we need a distributed transaction?
