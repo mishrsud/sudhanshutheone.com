@@ -10,8 +10,8 @@ environment:
 # See http://help.appveyor.com/discussions/problems/6312-curl-command-not-found
 # And https://github.com/appveyor/ci/issues/1431
 install:
-- set PATH=C:\Program Files\Git\mingw64\bin;%PATH%
+- dotnet tool install -g Wyam.Tool
 
 build_script:
-  - ps: .\build.ps1 -Target "AppVeyor"
+  - bash: build-new.sh
   
