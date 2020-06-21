@@ -6,11 +6,9 @@ environment:
   NETLIFY_TOKEN:
     secure: YlvUfYuyESNu1oO7zzqrPBZEamNz1Ss83eH82ylp1hTw6yWdlXyMCuYc1iLst2388M8kMqhBtXyTCY69h2zyyRjyB1mE0DgEMSnqVof6W1M
 
-# Temporarily needed until curl added to PATH
-# See http://help.appveyor.com/discussions/problems/6312-curl-command-not-found
-# And https://github.com/appveyor/ci/issues/1431
 install:
 - dotnet tool install -g Wyam.Tool
+- sudo apt install zip unzip
 
 build_script:
   - bash build-new.sh
