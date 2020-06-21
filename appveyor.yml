@@ -8,7 +8,6 @@ environment:
 
 install:
 - dotnet tool install -g Wyam.Tool
-- sudo apt install zip unzip
 
 build_script:
   - bash build-new.sh
