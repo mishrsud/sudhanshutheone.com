@@ -15,4 +15,4 @@ build_script:
   
 after_build:
   - ps: Compress-Archive -Path ./output/ -DestinationPath ./output.zip
-  - curl --header "Content-Type: application/zip" --header "Authorization: Bearer ${NETLIFY_TOKEN}" --data-binary output.zip --url https://api.netlify.com/api/v1/sites/sudhanshutheone.netlify.com/deploys
+  - bash upload-netlify.sh
