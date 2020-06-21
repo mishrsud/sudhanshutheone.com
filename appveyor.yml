@@ -13,3 +13,6 @@ install:
 build_script:
   - bash build-new.sh
   
+after_build:
+  - ps: Compress-Archive -Path ./output/ -DestinationPath ./output.zip
+  - bash upload-netlify.sh
