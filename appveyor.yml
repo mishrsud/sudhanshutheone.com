@@ -13,5 +13,5 @@ install:
 - dotnet tool install -g Wyam.Tool
 
 build_script:
-  - bash: build-new.sh
+  - bash build-new.sh
   
