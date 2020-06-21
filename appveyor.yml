@@ -11,7 +11,6 @@ environment:
 # And https://github.com/appveyor/ci/issues/1431
 install:
 - dotnet tool install -g Wyam.Tool
-- export PATH="$PATH:~/.dotnet/tools"
 
 build_script:
   - bash: build-new.sh
