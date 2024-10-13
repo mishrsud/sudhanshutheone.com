@@ -1,0 +1,24 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Install Wyam
+        run: dotnet tool install -g Wyam.Tool
+      - name: Build site
+        run: bash build-new.sh
+      - name: Compress output
+        run: pwsh -c "Compress-Archive -Path ./output/ -DestinationPath ./output.zip"
+      - name: Upload to Netlify
+        run: bash upload-netlify.sh
+        env:
+          NETLIFY_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
