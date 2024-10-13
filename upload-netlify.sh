@@ -5,6 +5,6 @@
 npm install -g netlify-cli
 
 # Authenticate Netlify CLI using the token
-export NETLIFY_AUTH_TOKEN=$NETLIFY_AUTH_TOKEN
+export NETLIFY_AUTH_TOKEN=$NETLIFY_TOKEN
 
 netlify deploy --prod --dir=output
