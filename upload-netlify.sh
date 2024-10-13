@@ -8,4 +8,4 @@ npm install -g netlify-cli
 export NETLIFY_AUTH_TOKEN=$NETLIFY_AUTH_TOKEN
 
 # Deploy the site
-netlify deploy --site 05f90622-e089-411a-a051-723a8cae32db --prod --dir=output
+netlify deploy --site sudhanshutheone --prod --dir=output
