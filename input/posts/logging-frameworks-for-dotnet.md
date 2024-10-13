@@ -1,12 +1,13 @@
-
 Title: Logging Frameworks for .NET
 Lead: A monologue about the available options when it comes to logging frameworks for .NET applications
 Published: 2015-02-05
-Tags: 
+Tags:
+
 - .NET
-- C#
+- CSharp
 - Logging
 - instrumentation
+
 ---
 
 ### Introduction
@@ -38,12 +39,12 @@ It is no good writing logs if you don't have a good viewer you can use to analys
 1.  [BareTail](http://www.baremetalsoft.com/baretail/) from Bare Metal - Has a free as well as paid variant, provides color coding and search
 2.  LogExpert - found [here](http://logexpert.codeplex.com/) - Free and open source, has custom columnizer so can process almost any format
 3.  One could use a PowerShell cmdlet to tail log files as described [here](http://stackify.com/11-ways-to-tail-a-log-file-on-windows-unix/) - free but no colors here!
-PS: The company that owns SmartInspect, Gu Rock, has a page that compares features of the most popular logging frameworks **[here](http://www.dotnetlogging.com/comparison/) **- please note that I have not verified the accuracy of the comparison, there may be changes
+    PS: The company that owns SmartInspect, Gu Rock, has a page that compares features of the most popular logging frameworks **[here](http://www.dotnetlogging.com/comparison/) **- please note that I have not verified the accuracy of the comparison, there may be changes
 
 They also have a (claimed) comprehensive directory of logging tools [**here**](http://www.dotnetlogging.com/).
 
-
 ## Update: Reading this in 2017? Things have changed
+
 The best instrumentation solution in 2017 is a combination of structured logging using [Serilog](https://github.com/serilog/serilog) and a log analysis system like ELK (Elastic Search, Logstash and Kibana) or [Seq](https://getseq.net/) blog post coming soon!
 
 Happy Coding!

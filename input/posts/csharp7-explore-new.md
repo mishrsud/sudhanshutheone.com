@@ -1,9 +1,11 @@
 Title: C# 7 Says Hello World!
-Lead: My favourite features from the newly minted 7th edition of my favourite programming language C#! 
+Lead: My favourite features from the newly minted 7th edition of my favourite programming language C#!
 Published: 2016-10-10
 Tags:
-  - .NET 
-  - C# 7
+
+- .NET
+- CSharp 7
+
 ---
 
 ---
@@ -15,13 +17,14 @@ For a comprehensive list of features and introduction on what they mean, as well
 Mads also presented at the Copenhagen .NET user group last week and you can watch his presentation on MSDN Channel 9 here: [C# 7 and Beyond](https://channel9.msdn.com/Shows/Dev-Channel/Csharp70-and-beyond)
 
 Some interesting mentions from the channel 9 video were:
+
 - Xamarin Test cloud [here](https://www.xamarin.com/test-cloud) - test Xamarin apps on actual physical devices as part of CI/CD
 - Unity (cross platform gaming platform) Based on Mono
 - .NET Core (Cross platform runtime) and .NET Standard (Cross platform .NET API)
 - [OmniSharp](http://www.omnisharp.net/) Expose intellisense and C# language features as a service so that any Code Editor can
-augment itself with C# aware code-editing
+  augment itself with C# aware code-editing
 - Mono will continue to live, .NET core provides an alternative, optimised runtime for
-the server side. Mono still provides the runtime and compiler for platforms where .NET core isn't yet available. (Mono is under .NET Foundation: https://github.com/mono/mono)
+  the server side. Mono still provides the runtime and compiler for platforms where .NET core isn't yet available. (Mono is under .NET Foundation: https://github.com/mono/mono)
 - Xamarin is moving towards Roslyn as their compiler platform
 
 Of the new features, my favourite one's (in no particular order) are as follows:
