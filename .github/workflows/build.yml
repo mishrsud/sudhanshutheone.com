@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,8 +18,6 @@ jobs:
         run: bash build-new.sh
         env:
           DOTNET_ROLL_FORWARD: Major
-      - name: Compress output
-        run: pwsh -c "Compress-Archive -Path ./output/ -DestinationPath ./output.zip"
       - name: Upload to Netlify
         run: bash upload-netlify.sh
         env:
