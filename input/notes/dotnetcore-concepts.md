@@ -2,19 +2,21 @@
 Title: Concepts in .NET Core
 Lead: Some key concepts in .NET Core, gotchas and changes from .NET Classic
 Published: 2017-04-28
-Tags: 
-- C#
-- dotnet core
-- gotchas
+Tags:
+  - CSharp
+  - dotnet core
+  - gotchas
 ---
 
 ## AppDomain in .NET Core
+
 The concept of an AppDomain is quite different in .NET core. For example, creating a custom AppDomain is not supported.
 Prior to .NET Standard 2.0, AppDomain type wasn't available when targeting .NET Standard.
 
 [This answer on Stackoverflow](https://stackoverflow.com/q/27266907/190476) goes into details of the reasons .NET Core left out key features of AppDomains
 
 .NET Standard [FAQs on Github](https://github.com/dotnet/standard/blob/master/docs/faq.md#is-appdomain-part-of-net-standard) mentions this:
+
 > The primary reason we expose this type in .NET Standard is because the usage is fairly high and typically not associated with creating new app domains but for interacting with the current app domain, such as registering an unhandled exception handler or asking for the application's base directory.
 
 So, these two use cases are supported on all platforms:

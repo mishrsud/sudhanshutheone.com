@@ -1,12 +1,13 @@
-
-Title: NUnit Assertions - IsAssignableFrom and IsInstanceOf 
+Title: NUnit Assertions - IsAssignableFrom and IsInstanceOf
 Lead: Tiny goodies from my experiences with NUnit
 Published: 2015-02-12
-Tags: 
+Tags:
+
 - .NET
 - Unit-Testing
 - TDD
-- C#
+- CSharp
+
 ---
 
 ---
@@ -18,7 +19,7 @@ A good test coverage and a great unit test framework are like a good insurance c
 1.  **Arrange**: Prepare the SUT or System Under Test (instantiate and initialize the code to be tested)
 2.  **Act**: Exercise the code - make a method call, mutate the state etc.
 3.  **Assert**: Check if the resultant state is what the specification expects it to be
-This post is regarding two seemingly confusing methods available on the NUnit Assert class: IsAssignableFrom and IsInstanceOf.
+    This post is regarding two seemingly confusing methods available on the NUnit Assert class: IsAssignableFrom and IsInstanceOf.
 
 Note that this post is using NUnit via the NuGet package and is based on version 2.6.4. You can get it by typing the following command;
 
@@ -62,22 +63,22 @@ public class EmployeeTests
    {
         /// Arrange - creating and initializing the repository omitted for brevity
 
-        /// Act - Call a method on the repository 
+        /// Act - Call a method on the repository
 	var employee = _sqlRepository.GetEmployeeById(2341);
 
-        /// Assert - Check if the object received is a type that can be assigned to a Manager 
+        /// Assert - Check if the object received is a type that can be assigned to a Manager
 	Assert.IsAssignableFrom<Manager>(employee); // Passes because Manager is derived from Employee
    }
 }
 ```
 
-In essence, the Assert.IsAssignableFrom is working exactly like System.Type.IsAssignableFrom (see [MSDN](https://msdn.microsoft.com/en-us/library/system.type.isassignablefrom(v=vs.110).aspx "MSDN")) where it is clearly stated that the following is the criteria for "truthfulness" of the method call IsAssignableFrom(type c):
+In essence, the Assert.IsAssignableFrom is working exactly like System.Type.IsAssignableFrom (see [MSDN](<https://msdn.microsoft.com/en-us/library/system.type.isassignablefrom(v=vs.110).aspx> "MSDN")) where it is clearly stated that the following is the criteria for "truthfulness" of the method call IsAssignableFrom(type c):
 
--  c and the current instance represent the same type.
--  c is derived either directly or indirectly from the current instance.
--  The current instance is an interface that c implements.
--  c is a generic type parameter, and the current instance represents one of the constraints of c.
-Now where do we use IsInstanceOf then? As the name suggests, when checking if the received object is an instance of the type passed in the generic parameter. Consider this test:
+- c and the current instance represent the same type.
+- c is derived either directly or indirectly from the current instance.
+- The current instance is an interface that c implements.
+- c is a generic type parameter, and the current instance represents one of the constraints of c.
+  Now where do we use IsInstanceOf then? As the name suggests, when checking if the received object is an instance of the type passed in the generic parameter. Consider this test:
 
 ```
 [TestClass]
@@ -88,20 +89,20 @@ public class EmployeeTests
    {
         /// Arrange - creating and initializing the repository omitted for brevity
 
-        /// Act - Call a method on the repository 
+        /// Act - Call a method on the repository
 	var manager = _sqlRepository.GetEmployeeById(2341);
 
-        /// Assert - Check if the object received is an instance of type Employee 
-	Assert.IsInstanceOf<Employee>(manager); // Passes 
+        /// Assert - Check if the object received is an instance of type Employee
+	Assert.IsInstanceOf<Employee>(manager); // Passes
    }
 }
 ```
 
-Again, this works similar to the [Type.IsInstanceOf ](https://msdn.microsoft.com/en-us/library/system.type.isinstanceoftype(v=vs.110).aspx "MSDN")method.
+Again, this works similar to the [Type.IsInstanceOf ](<https://msdn.microsoft.com/en-us/library/system.type.isinstanceoftype(v=vs.110).aspx> "MSDN")method.
 
-###  Summary
+### Summary
 
--  Use IsAssignableFrom<T> when checking whether the actual result is the base-type of T
--  Use IsInstanceOf<T> when checking if the result is derived from T (directly or through an inheritance hierarchy)
+- Use IsAssignableFrom<T> when checking whether the actual result is the base-type of T
+- Use IsInstanceOf<T> when checking if the result is derived from T (directly or through an inheritance hierarchy)
 
 Happy Coding!

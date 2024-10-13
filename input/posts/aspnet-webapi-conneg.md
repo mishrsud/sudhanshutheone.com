@@ -1,14 +1,15 @@
-
 Title: ASP.NET Web API - Content Negotiation, Content-Type, Accept and Accept-Charset in a nutshell
 Lead: My take on content negotiation, REST, HTTP and how it all comes together in ASP.NET Web API
 Published: 2015-02-04
-Tags: 
+Tags:
+
 - .NET
 - ASP.NET
 - ASP.NET Web API
-- C#
+- CSharp
 - Gloabalization
 - HTTP
+
 ---
 
 ### Hello, Web API
@@ -28,12 +29,13 @@ E.g. Accept: audio/*; q=0.2, audio/basic
 
 This should be interpreted by the server as: "The client prefers MIME type audio/basic but would be fine with any audio type after an 80% mark-down in quality"
 
-
 When the server responds, it will indicate the response MIME type in the **Content-Type** HTTP header defined like so:
+
 ```
 Content-Type := type "/" subtype *[";" parameter]
 E.g. Content-Type: audio/mp3
 ```
+
 Which should mean that the server is sending back audio that is in MP3 format.
 
 ### What is Content-Negotiation and how does it work?
@@ -45,10 +47,10 @@ I see this as a nice separation of concern from an architectural standpoint in g
 When an HTTP Client (e.g. a browser or any .NET application calling into the Web API) sends an "Accept" header, content negotiation kicks in. The value of this header can be read from several places in a request. Web API by default provides the following 4 media type mappings or places you can configure for the accept media types to be read:
 
 1.  [QueryStringMapping](https://msdn.microsoft.com/en-us/library/system.net.http.formatting.querystringmapping%28v=vs.118%29.aspx): Read the media type header values from query string
-2.  [UriPathExtensionMapping](https://msdn.microsoft.com/en-us/library/system.net.http.formatting.uripathextensionmapping(v=vs.118).aspx): Read the media type header values from Uri path extensions
+2.  [UriPathExtensionMapping](<https://msdn.microsoft.com/en-us/library/system.net.http.formatting.uripathextensionmapping(v=vs.118).aspx>): Read the media type header values from Uri path extensions
 3.  [RequestHeaderMapping](https://msdn.microsoft.com/en-us/library/system.net.http.formatting.requestheadermapping%28v=vs.118%29.aspx): Read the mapping from an arbitrary HTTP request header field to a media type header value
 4.  MediaRangeMapping: Read the MediaTypeHeaderValues for a request or response from a media range.
-As an example, suppose I have a custom media type formatter that is used to return a CSV as the response stream and I want that the client indicate her preference of the format through a querystring parameter, the following line would have to be written in the bootstrap stage (i.e. the Global.asax.cs or WebApiConfig.Register method):
+    As an example, suppose I have a custom media type formatter that is used to return a CSV as the response stream and I want that the client indicate her preference of the format through a querystring parameter, the following line would have to be written in the bootstrap stage (i.e. the Global.asax.cs or WebApiConfig.Register method):
 
 ```
 var config = GlobalConfiguration.Configuration;
@@ -58,6 +60,7 @@ config.Formatters.Add(new CsvMediaTypeFormatter(new QueryStringMapping("format",
 ```
 
 From the client, the request would now contain a querystring like so (assuming the API exposes this functionality through the URI /data/getdetails)
+
 ```
 /data/getdetails?**format=csv**
 ```

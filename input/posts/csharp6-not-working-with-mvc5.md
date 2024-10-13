@@ -1,13 +1,14 @@
-
 Title: C# 6.0 Features Not Working with MVC 5 / Visual Studio 2015 / Razor
 Lead: How I got out of the dreaded yellow screen of death in an MVC5 project
 Published: 2016-08-23
-Tags: 
+Tags:
+
 - .NET
 - ASP.NET
-- C#
+- CSharp
 - MVC5
 - Web-Development
+
 ---
 
 ---
@@ -15,8 +16,9 @@ Tags:
 ## Who moved my cheese?
 
 I ran into this problem today while mucking around with the installed Nuget packages and web.config of an MVC 5 project where the Razor views started showing up an error while using the C# 6 String interpolation feature. There was a squiggly line under all string interpolation expressions and when I pointed to it, the error said "Cannot use C# 6 feature with C# 5". When run, there was the dreaded YSOD (Yellow Screen Of Death for the uninitiated) that said:
+
 > CS1525: Invalid expression term '$'
-Here's a [discussion on Stackoverflow](http://stackoverflow.com/a/31548221/190476) on this topic that helped.
+> Here's a [discussion on Stackoverflow](http://stackoverflow.com/a/31548221/190476) on this topic that helped.
 
 ### The Issue
 
@@ -24,7 +26,7 @@ I had accidently uninstalled the _**Microsoft.CodeDom.Providers.DotNetCompilerPl
 
 ### The Solution
 
-1.  Install the _**Microsoft.CodeDom.Providers.DotNetCompilerPlatform **_Nuget package.
+1.  Install the \_**Microsoft.CodeDom.Providers.DotNetCompilerPlatform **\_Nuget package.
 2.  (This is required only if you don't already have the mentioned section in Web.config) Add the following XML fragment in your root web.config
 
 ```
@@ -43,8 +45,8 @@ After adding the DotNetCompilerPlatform package and the system.codedom section, 
 
 ### Further reading:
 
-*   Rationale behind Roslyn in ASP.NET applications: [Blog post by Damian Edwards](https://blogs.msdn.microsoft.com/webdev/2014/05/12/enabling-the-net-compiler-platform-roslyn-in-asp-net-applications/)
-*   An (official) [overview of Roslyn](https://github.com/dotnet/roslyn/wiki/Roslyn%20Overview)
-Happy Coding!
+- Rationale behind Roslyn in ASP.NET applications: [Blog post by Damian Edwards](https://blogs.msdn.microsoft.com/webdev/2014/05/12/enabling-the-net-compiler-platform-roslyn-in-asp-net-applications/)
+- An (official) [overview of Roslyn](https://github.com/dotnet/roslyn/wiki/Roslyn%20Overview)
+  Happy Coding!
 
 SM

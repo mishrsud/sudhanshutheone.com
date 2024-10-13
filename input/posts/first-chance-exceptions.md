@@ -1,11 +1,12 @@
-
 Title: First Chance exceptions - What are the chances?
 Lead: Ever noticed your Visual Studio output windows show pesky First Chance exception messages? Read on to find out what they are.
 Published: 2015-02-03
-Tags: 
+Tags:
+
 - .NET
-- C#
+- CSharp
 - Exception-Handling
+
 ---
 
 ---
@@ -24,11 +25,11 @@ When code is running under a debugger, for instance, the visual studio debugger,
 
 1.  The debugger is notified that an exception occurred
 2.  The application execution is suspended and the debugger decides what to do about this situation
-The first iteration through this mechanism is what is termed as a "First Chance" exception. Now depending on the configuration, the debugger will either resume the application or (e.g. break on all exceptions) enter debug mode. If the exception is unhandled, the debugger is re-notified - resulting in a second chance exception. This would result in the debugger suspending the execution and deciding what to do. The most common action by the debugger is typically enter debug mode on a second chance exception.
+    The first iteration through this mechanism is what is termed as a "First Chance" exception. Now depending on the configuration, the debugger will either resume the application or (e.g. break on all exceptions) enter debug mode. If the exception is unhandled, the debugger is re-notified - resulting in a second chance exception. This would result in the debugger suspending the execution and deciding what to do. The most common action by the debugger is typically enter debug mode on a second chance exception.
 
 ### The variances in behavior
 
-1.  If the setting "Enable Just my Code" under Tools -> Options -> Debugging is checked, the debugger ignores first-chance CLR exceptions thrown out of user code if they __do not__ pass through user code. However, if an exception is completely unhandled, it will result in a break in execution
+1.  If the setting "Enable Just my Code" under Tools -> Options -> Debugging is checked, the debugger ignores first-chance CLR exceptions thrown out of user code if they **do not** pass through user code. However, if an exception is completely unhandled, it will result in a break in execution
 2.  If the "Enable Just my Code" is cleared (unchecked), the debugger would break even on CLR exceptions but the highlighted line may not always be where the exception occurred as mentioned on [MSDN](https://msdn.microsoft.com/en-us/library/d14azbfh.aspx)
 
 ### Summary
