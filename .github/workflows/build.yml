@@ -21,4 +21,4 @@ jobs:
       - name: Upload to Netlify
         run: bash upload-netlify.sh
         env:
-          NETLIFY_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
+          NETLIFY_TOKEN: ${{ secrets.NETLIFY_ACCESS_TOKEN }}
