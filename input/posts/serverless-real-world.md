@@ -1,14 +1,14 @@
 ---
-Title: Serverless: A Powerful Tool, But No Silver Bullet
+Title: Serverless - A Powerful Tool, But No Silver Bullet
 Lead: Serverless is a a great tool to go to production swiftly but it is not a silver bullet. It has its own set of challenges.
 Published: 2024-11-03
 Tags:
-
-- serverless
-- aws-lambda
-- functions
-
+  - serverless
+  - aws-lambda
+  - functions
 ---
+
+![Serverless](images/serverless-title.png)
 
 ## Serverless: A Powerful Tool, But No Silver Bullet
 
@@ -27,6 +27,8 @@ Lambda is often the gateway for developers diving into serverless. It’s incred
 - **Cost Awareness**: The “pay-for-use” model is a double-edged sword; while it offers savings, it can become surprisingly expensive without proper cost controls and monitoring.
 - **Cold Starts**: Cold starts can be a source of frustration, especially for latency-sensitive applications. Understanding how to mitigate cold starts—by optimising code, using provisioned concurrency, or other strategies is essential for maintaining consistent performance.
 - **Local Development**: Developing and testing Lambda functions locally can be challenging. Tools like AWS SAM and local emulators can help, but they require a learning curve to use effectively.
+
+![AWS Lambda](images/AWS-serverless-arch.png)
 
 ### 2. Amazon SQS: Simple, but Mind the Details
 
