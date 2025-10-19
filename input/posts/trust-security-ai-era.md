@@ -27,7 +27,7 @@ Every AI suggestion must carry comprehensive metadata: model version, prompt, in
 Conservative defaults, limited blast radius, and mandatory human gates for high-risk changes. When in doubt, err on the side of caution and human review.
 
 ### 4. Detect, Measure, Iterate
-Continuous monitoring and red-team testing replace trust-by-default. What gets measured gets managed—and secured.
+Continuous monitoring and [red-team testing](https://www.infosecinstitute.com/resources/penetration-testing/what-is-red-team-testing-how-does-it-work/) replace trust-by-default. What gets measured gets managed—and secured.
 
 ### 5. Blame-Free Accountability
 
