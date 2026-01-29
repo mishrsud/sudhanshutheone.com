@@ -2,3 +2,7 @@
   for = "/*.woff"
   [headers.values]
     Access-Control-Allow-Origin = "*"
+
+[build]
+  command = "npm run docs:build"
+  publish = "docs/.vitepress/dist"

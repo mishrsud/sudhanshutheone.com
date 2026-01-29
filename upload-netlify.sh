@@ -9,4 +9,4 @@ export NETLIFY_AUTH_TOKEN=$NETLIFY_TOKEN
 export NETLIFY_SITE_ID=$NETLIFY_SITE_ID
 
 netlify link --site $NETLIFY_SITE_ID
-netlify deploy --prod --dir=output
+netlify deploy --prod --dir=docs/.vitepress/dist

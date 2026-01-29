@@ -1,9 +1,13 @@
 # sudhanshutheone
 
-The code for the [sudhanshutheone.com](http://www.sudhanshutheone.com) website.
-Site built using the excellent Wyam.io and Cake build.
+The code for my website [sudhanshutheone.com](http://www.sudhanshutheone.com) website.
+Site built using VitePress.
 
-Thanks to the following gentlemen, teams and tools:
+## Development
 
-- [David Glick](https://github.com/daveaglick)
-- [Cakebuild Team](https://github.com/cake-build/cake)
+- Install dependencies: `npm install`
+- Run locally: `npm run docs:dev`
+- Build static site: `npm run docs:build`
+- Preview build: `npm run docs:preview`
+
+
