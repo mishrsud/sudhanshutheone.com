@@ -9,6 +9,7 @@ nuget.exe
 /packages.xml
 .idea/
 config.*
+!docs/.vitepress/config.mjs
 .vs/
 node_modules/
 docs/.vitepress/cache/
