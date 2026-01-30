@@ -2,6 +2,15 @@
 title: Blog
 ---
 
+## 2026
+
+<div class="post-item">
+  <h3><a href="/blog/vibe-driven-development-paradox">The Vibe-Driven Development Paradox</a></h3>
+  <p class="post-desc">A synthesis of the AI-automation narrative from leaders across the industry, and why more autonomy paradoxically demands more human supervision.</p>
+  <p class="post-meta"><em>Posted on Friday, 30 January 2026</em></p>
+</div>
+
+
 ## 2025
 
 <div class="post-item">
