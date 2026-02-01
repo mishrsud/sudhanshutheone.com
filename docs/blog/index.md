@@ -5,6 +5,12 @@ title: Blog
 ## 2026
 
 <div class="post-item">
+  <h3><a href="/blog/ai-agent-workflows-to-adopt">AI Agent Workflows to Adopt in 2026</a></h3>
+  <p class="post-desc">A summary of best practices for integrating AI agents into software development workflows, transforming engineers into technical architects and orchestrators that can realise complex software systems with unprecedented efficiency.</p>
+  <p class="post-meta"><em>Posted on Sunday, 1 February 2026</em></p>
+</div>
+
+<div class="post-item">
   <h3><a href="/blog/vibe-driven-development-paradox">The Vibe-Driven Development Paradox</a></h3>
   <p class="post-desc">A synthesis of the AI-automation narrative from leaders across the industry, and why more autonomy paradoxically demands more human supervision.</p>
   <p class="post-meta"><em>Posted on Friday, 30 January 2026</em></p>
