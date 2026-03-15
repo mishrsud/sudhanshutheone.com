@@ -27,3 +27,5 @@ features:
 ---
 
 <h3 class="home-subtitle">AI Pragmatist, Software crafts-person, problem solver, mentor, teacher, open source enthusiast</h3>
+
+<RecentPosts />
