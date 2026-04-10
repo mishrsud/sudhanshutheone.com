@@ -45,6 +45,22 @@ The honest limitation here is worth naming: agents can surface what's in the cod
 
 ### 2. Refactoring & Modernization
 
+Refactoring legacy code carries a specific kind of dread that greenfield work doesn't. You're not building something new — you're moving load-bearing walls in a house that people are currently living in. Unknown dependencies surface at the worst moments. Side effects propagate through call chains nobody has traced in years. And somewhere underneath all of it is the knowledge that the system was working before you touched it, and that any breakage is, by definition, yours.
+
+The codebase analysis from Scenario 1 doesn't just answer questions in isolation — it becomes the raw material for the next stage. This is the part I think most people miss when they talk about agentic workflows: the real leverage isn't any single agent interaction, it's composing them into a pipeline where the output of one stage feeds the input of the next.
+
+Here's how that worked for me in practice. After Claude Code had done the initial codebase analysis — surfacing the risk areas, tracing dependencies, flagging what had test coverage and what didn't — I sat down with a plain text editor. Deliberately no IDE, no autocomplete, no tooling with opinions. Just a scratchpad where I jotted down my own rough thinking about what a modernization might actually look like: what I'd prioritize, what I was uncertain about, what I thought the shape of the plan should be. Unpolished, incomplete, useful precisely because it was mine.
+
+That scratchpad, combined with Claude Code's codebase analysis, became the joint input for the next stage: drafting the modernization plan itself. The old workflow was linear and disconnected — research a set of ideas, gather resources and citations, draft a document and eventually a presentation, each stage done mostly in isolation from the real system. The agentic pipeline is something else: the agent's ground-truth analysis of the actual codebase and the engineer's own thinking arrive together, and the plan that emerges from that is grounded in the specific system rather than assembled from generic best-practice recommendations. The scratchpad preserves the human's judgment about direction; the agent's analysis provides the facts to build on. Neither is sufficient alone.
+
+The second story is simpler, and in some ways more satisfying. I needed to upgrade a .NET solution from version 8 to version 10. This is the kind of work that is technically necessary, often urgent, and almost entirely mechanical — the sort of task that occupies a capable engineer's hands while giving their brain nothing to do. Runtime upgrades follow a known pattern: update the target framework, work through the deprecations, resolve the dependency conflicts, verify nothing broke. Valuable to have done; not interesting to do.
+
+We had a thorough test suite. That's the load-bearing detail here. With it in place, I issued a prompt to a Codex agent: create a branch, upgrade the runtime to .NET 10, and make sure all tests pass. Then I let it run in the background while I used my remaining neurons on something that actually required them.
+
+The test suite is what converts an agent from a liability into a workhorse you can trust. Without it, you have no way to know whether the mechanical transformation was actually correct — a passing build is not the same as a correct system. With it, the agent has a feedback loop, a definition of done that doesn't depend on anyone having to read the output carefully to catch errors. The guardrail is what makes safe delegation possible. And once you have safe delegation, you get something genuinely useful back: your own attention, redirected to work that requires it.
+
+The honest limitation is this: agents are good at mechanical transformation but can miss cross-cutting concerns. A runtime upgrade might pass every test and still behave differently in production under load, or in specific infrastructure configurations, or in edge cases that the test suite doesn't cover. Tests reduce the risk; they don't eliminate it. An agent completing the upgrade successfully is a strong signal, not a guarantee, and the first production deployment after any runtime change deserves closer attention than usual. That judgment — when to trust the signal, how much headroom to give the rollout — is still the engineer's.
+
 ### 3. Debugging & Incident Response
 
 ### 4. Test Coverage & Safety Nets
