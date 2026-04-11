@@ -123,4 +123,18 @@ These aren't replacements for understanding — they're amplifiers for the under
 
 ## When Agentic Workflows Win (and When They Don't)
 
+Across the five scenarios, some patterns hold consistently enough to be worth naming — not as a capabilities matrix, but as observations from actually running these workflows.
+
+Agents earn their keep when the task scales across a codebase in ways a human brain can't comfortably match. Reading and cross-referencing fifty files to trace a dependency is tedious and error-prone for a person; an agent does it without losing the thread. The same logic applies to mechanical transformation: runtime upgrades, pattern modernisation, renaming conventions applied consistently across a hundred files. Agents also compress the orientation phase when you're entering unfamiliar code — surfacing structure, risk areas, and the right questions in a fraction of the time. In debugging, the hypothesis-generation phase benefits from the same breadth: more angles, faster narrowing, with a human still driving the elimination.
+
+The common thread in those wins is that the relevant knowledge lives in the code itself. When the task can be grounded in what's actually in the repository, agents perform well.
+
+Where they struggle is wherever the relevant knowledge lives somewhere else. The architectural decision made under a constraint that no longer exists — that context is in someone's head, or gone entirely. The question of what a feature should do rather than what it currently does — that's a business judgment agents don't have. Niche or poorly-documented technologies thin out the training data the model is drawing on, and output quality follows; with bespoke internal frameworks, agent confidence and accuracy can diverge in ways that matter.
+
+The sharpest failure mode, though, is vague task definitions. "Improve this class" produces something that looks improved and may not be. "Refactor this into focused methods, each under 20 lines, all tests must pass" produces something you can verify. The gap between those two instructions is the gap between delegation and a coin flip. Agents produce what you specify precisely enough to check; they don't reliably know what you meant when you didn't say it clearly enough to verify. Writing a task definition that's specific enough to be testable isn't a workaround for agent limitations — it's the skill that determines whether any of this is useful.
+
+There is also the trust question: agent-generated changes in production code need review, possibly more rigorously than human-written changes. Agents can be confidently wrong in ways that look right.
+
+The heuristic I keep coming back to: if you'd feel comfortable explaining this task to a capable engineer who's new to the domain — someone who can execute well but needs clear direction — an agent will probably help. If the task requires knowledge that isn't in the code or the conversation, you're the one who needs to lead.
+
 ## Epilogue
