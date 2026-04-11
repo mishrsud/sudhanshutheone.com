@@ -111,6 +111,16 @@ Which brings me to the god class. The same principles apply; the surface area is
 
 ## The Tools
 
+Across the five scenarios above, I've used three tools in consistent enough ways that it's worth naming them clearly — not to compare them, but to describe the specific role each one plays in the actual workflow.
+
+Claude in chat or via the API is where I do my exploratory reasoning. The pattern is simple: paste relevant files or snippets into context, ask a question, then ask the next question the answer raises. This is not a single-shot interaction — it's a multi-turn conversation where the mental model develops iteratively. "What is this function actually doing?" leads to "what would happen if I changed this parameter?" leads to "so the risk is here, not here — is that right?" The chat model's strength is synthesis: it can hold a significant amount of pasted code in context and help you think across multiple files at once, which is exactly what code understanding requires at the early stages when you're building a picture before you can act on it.
+
+Claude Code works differently because it has access to the actual repository. You don't paste files into it — you open the codebase and let it navigate. It reads source files, follows import chains, proposes changes directly in the repo, and, critically, it reads the agent constitution file automatically at the start of every session. That last detail is the one that compounds over time. The rules you write in CLAUDE.md — test coverage requirements, style standards, the definition of done — don't have to be repeated in every prompt. They're in the file the agent reads first. The workflow is: give it an intent, let it explore and propose, review what it produces. You stay in the loop; it handles the traversal and the typing.
+
+Codex agents — OpenAI Codex and tools built in that style, like GitHub Copilot Workspace — are where I go when the task is well-defined enough to delegate across multiple steps and I'd rather not supervise each one. The .NET upgrade in Scenario 2 is the clearest example: create a branch, upgrade the runtime, run the tests, report back. That's a multi-step workflow with a clear definition of done, and it runs in the background while you're doing something else. The discipline with these agents is front-loading the precision: define the task clearly, specify the constraints, identify what checkpoints you want to review. Vague instructions produce vague output, and at the scale these agents operate — branch creation, CI runs, PRs — vague output costs more to untangle than it saved. Define the task well, then let it run.
+
+These aren't replacements for understanding — they're amplifiers for the understanding you bring.
+
 ## When Agentic Workflows Win (and When They Don't)
 
 ## Epilogue
