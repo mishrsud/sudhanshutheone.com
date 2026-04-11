@@ -138,3 +138,13 @@ There is also the trust question: agent-generated changes in production code nee
 The heuristic I keep coming back to: if you'd feel comfortable explaining this task to a capable engineer who's new to the domain — someone who can execute well but needs clear direction — an agent will probably help. If the task requires knowledge that isn't in the code or the conversation, you're the one who needs to lead.
 
 ## Epilogue
+
+The hype is real. AI-assisted development is genuinely changing what's possible, and you'd have to be deliberately obtuse to argue otherwise. But the loudest stories — the weekend builds, the zero-to-shipped in forty-eight hours — describe a particular kind of work that most engineers spend very little time doing.
+
+The engineers who stand to gain the most from agentic workflows are not the ones launching greenfield projects. They're the ones who inherited a codebase from someone who's long gone, who spend their days in systems they didn't design and can't fully explain, who know exactly what "do you dare touch me?" feels like when they open a certain file. The maintenance engineers. The ones keeping the lights on in the systems that are already making money, already serving users, already load-bearing in ways that make recklessness expensive.
+
+That's who this series is for.
+
+In the next part, we'll go deep on the first and most foundational scenario: Code Understanding and Navigation. Real codebase, real workflow, real gotchas — including what the agent gets wrong and how you catch it before it matters.
+
+One last thing, and I mean this genuinely: what are you working with? Not abstractly — specifically. The codebase that makes you anxious when you open it, the system nobody fully understands anymore, the tech debt that's been sitting on the backlog so long it's earned squatter's rights. I'd actually like to hear about it.
