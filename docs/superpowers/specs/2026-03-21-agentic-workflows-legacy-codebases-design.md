@@ -1,5 +1,5 @@
 ---
-title: "Agentic Workflows for Legacy Codebases in Production" — Series Design
+title: "Agentic Workflows for Legacy Codebases in Production" 
 date: 2026-03-21
 author: Sudhanshu
 status: draft

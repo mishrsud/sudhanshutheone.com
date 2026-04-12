@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "sequentialthinking": {
+      "command": "npx",
+      "args": [
+        "@modelcontextprotocol/server-sequentialthinking"
+      ]
+    }
+  }
+}
