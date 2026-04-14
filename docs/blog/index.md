@@ -5,6 +5,12 @@ title: Blog
 ## 2026
 
 <div class="post-item">
+  <h3><a href="/blog/claude-code-in-depth-part-1">Claude Code in Depth, Part 1: Beyond the Autocomplete</a></h3>
+  <p class="post-desc">Claude Code is not a smarter autocomplete. It is an agentic CLI that reads files, runs commands, and makes decisions. Using it well starts with understanding the difference.</p>
+  <p class="post-meta"><em>Posted on Tuesday, 14 April 2026</em></p>
+</div>
+
+<div class="post-item">
   <h3><a href="/blog/agentic-workflows-legacy-code-part-1">Agentic Workflows for Legacy Codebases, Part 1: The Reality and What's Possible</a></h3>
   <p class="post-desc">Most engineers don't build new things. They maintain, extend, and make sense of code written by others, often in production, often without documentation. Here's what agentic coding workflows actually bring to that work.</p>
   <p class="post-meta"><em>Posted on Saturday, 11 April 2026</em></p>
