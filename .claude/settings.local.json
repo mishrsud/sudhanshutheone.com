@@ -3,7 +3,11 @@
     "allow": [
       "Bash(ls:*)",
       "Bash(git add:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "WebSearch",
+      "WebFetch(domain:www.youtube.com)",
+      "Read(//Users/sudhanshu/.claude/plugins/marketplaces/claude-plugins-official/plugins/example-plugin/skills/**)",
+      "Read(//Users/sudhanshu/SourceCode/claude-skills/skills/**)"
     ]
   }
 }
