@@ -10,6 +10,12 @@ title: Notes
   <p class="post-meta"><em>Posted on Saturday, 8 August 2026</em></p>
 </div>
 
+<div class="post-item">
+  <h3><a href="/notes/via-negativa-ad-absurdum">Via-Negativa: seeking improvement by careful removal rather than addition</a></h3>
+  <p class="post-desc">When looking to improve an aspect of personal, professional, social and sociopolitical or similar aspect of life, think subtractively - What can be removed? What should not be done?</p>
+  <p class="post-meta"><em>Posted on Monday, 29 June 2026</em></p>
+</div>
+
 
 ## 2019
 
