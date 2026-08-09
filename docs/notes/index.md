@@ -2,6 +2,15 @@
 title: Notes
 ---
 
+## 2026
+
+<div class="post-item">
+  <h3><a href="/notes/chestertons-fence">The Wisdom of the Barrier: Understanding Chesterton's Fence</a></h3>
+  <p class="post-desc">Chesterton's Fence is a mental model that says never knock down a fence until you understand why it was put up in the first place.</p>
+  <p class="post-meta"><em>Posted on Saturday, 8 August 2026</em></p>
+</div>
+
+
 ## 2019
 
 <div class="post-item">
