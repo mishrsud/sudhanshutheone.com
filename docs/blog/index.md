@@ -6,7 +6,7 @@ title: Blog
 
 <div class="post-item">
   <h3><a href="/blog/claude-code-in-depth-part-2">Claude Code in Depth, Part 2: Claude Code Remembers (If You Help It)</a></h3>
-  <p class="post-desc">Every session starts with a blank slate. What carries across is entirely up to you, and knowing the three mechanisms that make it work is the difference between coherent multi-session work and context rot.</p>
+  <p class="post-desc">Every session starts with a blank slate. What carries across is entirely up to you, and knowing the three systems that make it work is the difference between coherent multi-session work and context rot.</p>
   <p class="post-meta"><em>Posted on Saturday, 18 April 2026</em></p>
 </div>
 
