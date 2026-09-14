@@ -1,6 +1,7 @@
 ---
 title: Notes from Matt Ranney's talk on scaling Uber
 description: Distilled notes from the talk.
+date: 2025-04-20
 tags: 
 - Architecture
 - Microservices

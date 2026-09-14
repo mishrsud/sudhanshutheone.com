@@ -1,6 +1,7 @@
 ---
 title: Thoughts and opinions about unit tests 
 description: I've gathered my thoughts, experiences and opinions about unit testing in this blog.
+date: 2017-04-20
 tags: 
 - .NET 
 - Testing

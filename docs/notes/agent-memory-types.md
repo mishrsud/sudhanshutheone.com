@@ -1,6 +1,7 @@
 ---
 title: Notes on AI Agent Memory types 
 description: Information collected from various sources on agent memory.
+date: 2026-09-14
 tags: 
 - AI
 - Agent-Memory
