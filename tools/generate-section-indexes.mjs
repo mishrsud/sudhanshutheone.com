@@ -6,7 +6,7 @@ const root = process.cwd()
 const sections = [
   { name: 'blog', title: 'Blog', showDate: true },
   { name: 'notes', title: 'Notes', showDate: true },
-  { name: 'reads', title: 'Reads', showDate: false }
+  { name: 'reads', title: 'Reads', showDate: true }
 ]
 
 function parseFrontmatter(text) {
