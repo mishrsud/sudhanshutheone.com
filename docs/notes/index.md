@@ -5,6 +5,12 @@ title: Notes
 ## 2026
 
 <div class="post-item">
+  <h3><a href="/notes/agent-memory-types">Notes on AI Agent Memory types </a></h3>
+  <p class="post-desc">Information collected from various sources on agent memory.</p>
+  <p class="post-meta"><em>Posted on Monday, 14 September 2026</em></p>
+</div>
+
+<div class="post-item">
   <h3><a href="/notes/chestertons-fence">The Wisdom of the Barrier: Understanding Chesterton's Fence</a></h3>
   <p class="post-desc">Chesterton's Fence is a mental model that says never knock down a fence until you understand why it was put up in the first place.</p>
   <p class="post-meta"><em>Posted on Saturday, 8 August 2026</em></p>
@@ -14,6 +20,15 @@ title: Notes
   <h3><a href="/notes/via-negativa-ad-absurdum">Via-Negativa: seeking improvement by careful removal rather than addition</a></h3>
   <p class="post-desc">When looking to improve an aspect of personal, professional, social and sociopolitical or similar aspect of life, think subtractively - What can be removed? What should not be done?</p>
   <p class="post-meta"><em>Posted on Monday, 29 June 2026</em></p>
+</div>
+
+
+## 2025
+
+<div class="post-item">
+  <h3><a href="/notes/matt-ranney-scaling-uber-lessons">Notes from Matt Ranney's talk on scaling Uber</a></h3>
+  <p class="post-desc">Distilled notes from the talk.</p>
+  <p class="post-meta"><em>Posted on Sunday, 20 April 2025</em></p>
 </div>
 
 
@@ -133,6 +148,12 @@ title: Notes
 </div>
 
 <div class="post-item">
+  <h3><a href="/notes/advanced-testing-concepts">Thoughts and opinions about unit tests </a></h3>
+  <p class="post-desc">I've gathered my thoughts, experiences and opinions about unit testing in this blog.</p>
+  <p class="post-meta"><em>Posted on Thursday, 20 April 2017</em></p>
+</div>
+
+<div class="post-item">
   <h3><a href="/notes/analysing-12factor-app">An analysis of Twelve-Factor app methodology for developing software as a service</a></h3>
   <p class="post-desc">Understand how to use async and await for efficient code and avoid surprises.</p>
   <p class="post-meta"><em>Posted on Thursday, 20 April 2017</em></p>
@@ -152,11 +173,6 @@ title: Notes
 
 
 ## Unknown
-
-<div class="post-item">
-  <h3><a href="/notes/advanced-testing-concepts">Thoughts and opinions about unit tests </a></h3>
-  <p class="post-desc">I've gathered my thoughts, experiences and opinions about unit testing in this blog.</p>
-</div>
 
 <div class="post-item">
   <h3><a href="/notes/azure-service-bus-with-dotnetcore">Azure Service bus with dotnet core</a></h3>
