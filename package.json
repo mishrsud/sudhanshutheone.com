@@ -5,7 +5,8 @@
   "scripts": {
     "docs:dev": "node tools/generate-section-indexes.mjs && vitepress dev docs",
     "docs:build": "node tools/generate-section-indexes.mjs && vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "new-document": "node .agents/skills/new-document/scripts/create-document.mjs"
   },
   "devDependencies": {
     "vitepress": "^1.6.0"

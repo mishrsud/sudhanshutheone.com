@@ -10,4 +10,10 @@ Site built using VitePress.
 - Build static site: `npm run docs:build`
 - Preview build: `npm run docs:preview`
 
+## Adding a new item
 
+```bash
+npm run new-document -- --category <cat> --summary "<summary>"
+
+# category: one-of blog, notes, reads
+```
